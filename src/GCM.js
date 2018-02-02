@@ -125,7 +125,7 @@ function generateGCMPayload(requestData, pushId, timeStamp, expirationTime) {
     priority: 'high'
   };
   payload.data = {
-    data: requestData.data,
+    data: requestData,
     push_id: pushId,
     time: new Date(timeStamp).toISOString()
   }
